@@ -9,6 +9,7 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="chat-tool" displayType="STICKY_BALLOON"/>
         <toolWindow factoryClass="com.github.biluping.chattool.toolWindow.ChatToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
