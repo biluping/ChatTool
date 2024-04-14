@@ -39,7 +39,7 @@ class BottomPanel(private val project: Project) : JPanel(BorderLayout()) {
         isOpaque = false
         addKeyListener(object : KeyAdapter() {
             override fun keyPressed(e: KeyEvent) {
-                if (e.isMetaDown && e.keyCode == KeyEvent.VK_ENTER) {
+                if (!e.isShiftDown && e.keyCode == KeyEvent.VK_ENTER) {
                     doSubmit()
                 }
             }
@@ -114,7 +114,9 @@ class BottomPanel(private val project: Project) : JPanel(BorderLayout()) {
             centerPanel.addMessage(this)
             chatService.sendMessage(centerPanel.getChatMessageList(), this)
         }
-        jbTextArea.text = null
+        SwingUtilities.invokeLater {
+            jbTextArea.text = null
+        }
     }
 
     private fun changeBtnVisible(isFinish: Boolean) {

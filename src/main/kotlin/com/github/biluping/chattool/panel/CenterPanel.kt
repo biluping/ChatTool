@@ -40,6 +40,7 @@ class CenterPanel(private val project: Project) : JBScrollPane() {
         }.toMutableList()
         project.service<TopPanel>().getCurrentPrompt()?.let {
             chatMessageList.add(0, ChatMessage(ChatMessageRole.SYSTEM.value(), it))
+            chatMessageList.add(1, ChatMessage(ChatMessageRole.ASSISTANT.value(), "ok, I'm ready to start the conversation."))
         }
         return chatMessageList
     }
