@@ -26,7 +26,7 @@ class TopPanel(private val project: Project) : JPanel(BorderLayout()) {
     init {
         systemRoleSelect.selectedItem = chatToolProjectStore.state.selectedRoleName
         systemRoleSelect.addActionListener {
-            chatToolProjectStore.state.selectedRoleName = systemRoleSelect.selectedItem as String
+            chatToolProjectStore.state.selectedRoleName = systemRoleSelect.selectedItem as? String
         }
         add(systemRoleSelect, BorderLayout.WEST)
         add(createActionPanel(), BorderLayout.EAST)
