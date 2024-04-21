@@ -56,7 +56,7 @@ class ChatService {
                 .logitBias(HashMap())
                 .build()
 
-            openAiService!!.streamChatCompletion(chatCompletionRequest).doOnNext { chunk ->
+            disposable = openAiService!!.streamChatCompletion(chatCompletionRequest).doOnNext { chunk ->
                 chunk.choices.forEach {
                     abstractMessagePanel.offerToQueue(it.message.content ?: "")
                 }

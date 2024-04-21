@@ -62,6 +62,7 @@ class BottomPanel(private val project: Project) : JPanel(BorderLayout()) {
             override fun mouseClicked(e: MouseEvent) {
                 if (SwingUtilities.isLeftMouseButton(e)) {
                     chatService.disposable()
+                    changeBtnVisible(true)
                 }
             }
         })
