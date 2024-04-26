@@ -5,17 +5,17 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
 <!-- Plugin description -->
-目前支持功能如下，后续会继续新增各种实用功能
+Currently, the following functions are supported, and various practical functions will be added in the future
 
-### 一、ChatGPT 问答聊天
+### One、ChatGPT Question and answer chat
 
-1. 无需 vpn 直接使用
-2. 对当前选中的代码直接进行提问
-3. 支持 GPT 角色设定
-4. 支持问题的重新生成、删除、拷贝功能
-5. 支持一键新建会话
+1. Direct use without vpn
+2. Directly query the selected code
+3. Support GPT role setting
+4. Supports the function of re-generating, deleting, and copying problems
+5. Supports one-click session creation
 
-### 二、吟诗一首
+### Two、recite a poem
 
 The wind carries moisture
 
