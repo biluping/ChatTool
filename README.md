@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
 <!-- Plugin description -->
-Currently, the following functions are supported, and various practical functions will be added in the future
+A powerful AI code question-and-answer tool
 
 ### One、ChatGPT Question and answer chat
 
