@@ -27,7 +27,7 @@ dependencies {
 //    implementation(libs.annotations)
     implementation("com.theokanning.openai-gpt3-java:service:0.18.2")
     implementation("com.fifesoft:rsyntaxtextarea:3.4.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.1")
 }
 
 // Set the JVM language level used to build the project.
